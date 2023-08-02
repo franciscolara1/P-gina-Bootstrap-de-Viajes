@@ -1,0 +1,93 @@
+/* SECCION HEADER */
+.header{
+    background-image: url(../img/bg-header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img-logo{
+    width: 40px;
+}
+.vh-50{
+    height:50vmin;
+}
+/* SECCION EXPERIENCE */
+.card-img-filter{
+    filter:brightness(0.8);
+    
+}
+.card{
+    transition-duration: 0.6s;
+    clip-path: polygon(
+        50% 0,
+        100% 0,
+        100% 50%,
+        100% 100%,
+        50% 100%,
+        0 100%,
+        0 50%,
+        0 0
+
+    );
+
+    
+}
+.card-effect:hover .card{
+    clip-path: polygon(
+        50% 0,
+        50% 0,
+        100% 50%,
+        100% 50%,
+        50% 100%,
+        50% 100%,
+        0 50%,
+        0 50%
+
+    );
+
+}
+.card-img-overlay{
+    transition: 0.6s;
+}
+.card-effect:hover .card-img-overlay{
+    transform: scale(0.9);
+}
+
+/* SECTION COMMENTS ------*/
+
+.comments{
+    background-image: url(../img/bg-clients.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.comments-img{
+    --tamaño: 80px;
+    width: var(--tamaño);
+    height: var(--tamaño);
+    object-fit:cover;
+    border-radius: 50%;
+    box-shadow:7px 7px 7px rgba(0 0 0 /0.5);
+    border:3px ridge #fff;
+    
+
+}
+.transform-turn{
+    transform:rotate(.5turn);
+}
+/* -- SECTION INSPIRATION---*/
+.media-object-img{
+    --tamaño:65px;
+    width: var(--tamaño);
+    height: var(--tamaño);
+    margin-right: 15px;
+    
+}
+
+/* Carousel */
+.carousel-weston-middle{
+    top: 35%;
+}
+
+.section-padding-top{
+    padding-top: 60px;
+}
